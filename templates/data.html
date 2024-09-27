@@ -1,0 +1,19 @@
+<h1>{{ title }}</h1>
+
+{% if display_form %}
+    <form method="POST" action="{{ form_action }}">
+        {% for field in form_fields %}
+            <label for="{{ field.id }}">{{ field.label }}:</label>
+            <input type="text" id="{{ field.id }}" name="{{ field.id }}"><br>
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+{% endif %}
+
+{% if img_filename %}
+    <h2>{{ img_label }}</h2>  <!-- Add this line for dynamic label -->
+   <img src="{{ url_for('static', filename='images/' + img_filename) }}" alt="{{ img_label }} Image">
+
+{% else %}
+    <p>No image available.</p>
+{% endif %}
