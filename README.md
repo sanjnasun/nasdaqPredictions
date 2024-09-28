@@ -11,14 +11,17 @@ This project is a comprehensive web application that allows users to visualize a
 - Customizable User Options: Users can select different stocks and timeframes for analysis.
 
 # Tech Stack
-  Backend:
+
+Backend:
   - Python
   - Flask
   - SQLite
-  Machine Learning:
+
+Machine Learning:
   - Scikit-Learn
   - NumPy
   - Pandas
+
 Frontend:
   - HTML
   - CSS
